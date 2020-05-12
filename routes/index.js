@@ -3,6 +3,7 @@ var router = express.Router();
 const registroController = require("../controllers/registroController")
 
 /* GET home page. */
+router.get("/", registroController.showRegistro)
 router.get('/registro', registroController.showRegistro);
 router.post("/registro",registroController.registro);
 
